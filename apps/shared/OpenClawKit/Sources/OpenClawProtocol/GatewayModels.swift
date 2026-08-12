@@ -19073,8 +19073,8 @@ public struct PortalSummary: Codable, Sendable {
     public let title: String
     public let port: Int
     public let listenport: Int
-    public let tokenquery: String
-    public let url: String
+    public let tokenquery: String?
+    public let url: String?
     public let publicurl: String
     public let path: String?
     public let description: String?
@@ -19085,8 +19085,8 @@ public struct PortalSummary: Codable, Sendable {
         title: String,
         port: Int,
         listenport: Int,
-        tokenquery: String,
-        url: String,
+        tokenquery: String? = nil,
+        url: String? = nil,
         publicurl: String,
         path: String? = nil,
         description: String? = nil,
@@ -19165,8 +19165,8 @@ public struct PortalOpenResult: Codable, Sendable {
     public let title: String
     public let port: Int
     public let listenport: Int
-    public let tokenquery: String
-    public let url: String
+    public let tokenquery: String?
+    public let url: String?
     public let publicurl: String
     public let path: String?
     public let description: String?
@@ -19177,8 +19177,8 @@ public struct PortalOpenResult: Codable, Sendable {
         title: String,
         port: Int,
         listenport: Int,
-        tokenquery: String,
-        url: String,
+        tokenquery: String? = nil,
+        url: String? = nil,
         publicurl: String,
         path: String? = nil,
         description: String? = nil,
